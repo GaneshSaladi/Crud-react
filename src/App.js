@@ -15,7 +15,7 @@ function App() {
       </ul>
     </nav>
     <Routes>
-      <Route path='/' element={<Create/>}/>
+      <Route path='/' index element={<Create/>}/>
       <Route path='/read' element={<Read/>}/>
 
     </Routes>
