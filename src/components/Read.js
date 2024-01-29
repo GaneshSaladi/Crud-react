@@ -10,16 +10,6 @@ function Read() {
 
   const handleClose = () => setShow(false);
 
-  
-  // function no(){
-  //   if (posts.name===""){
-  //     console.log("no")
-  //   }
-  //   else{
-  //     console.log("yes")
-  //   }
-  // }
-
   function Reads() {
     axios
       .get("https://641804961ce6e710312ca73a.mockapi.io/crud-test")
