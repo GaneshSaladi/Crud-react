@@ -74,14 +74,14 @@ function Read() {
           return (
             <>
               <table class="table">
-                <thead>
+                {/* <thead>
                 <tr>
                   <th scope="col">id</th>
                   <th scope="col">name</th>
                   <th scope="col">email</th>
                   
                 </tr>
-              </thead>
+              </thead> */}
                 <tbody>
                   <tr>
                     <th scope="row">{index+1}</th>
