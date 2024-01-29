@@ -17,7 +17,6 @@ function App() {
     <Routes>
       <Route path='/' index element={<Create/>}/>
       <Route path='/read' element={<Read/>}/>
-
     </Routes>
     </>
   );

@@ -10,6 +10,11 @@ function Read() {
 
   const handleClose = () => setShow(false);
 
+  useEffect(() => {
+    Reads();
+    // no();
+  }, []);
+
   function Reads() {
     axios
       .get("https://641804961ce6e710312ca73a.mockapi.io/crud-test")
@@ -20,10 +25,6 @@ function Read() {
       .catch((error) => console.log(error));
   }
 
-  useEffect(() => {
-    Reads();
-    // no();
-  }, []);
 
   function handleDelete(id) {
     axios
@@ -68,22 +69,22 @@ function Read() {
         back
       </button>
       <div>
-        {posts.map((data) => {
+        {posts.map((data,index) => {
           // console.log("map", data.id);
           return (
             <>
               <table class="table">
-                {/* <thead>
+                <thead>
                 <tr>
                   <th scope="col">id</th>
                   <th scope="col">name</th>
                   <th scope="col">email</th>
                   
                 </tr>
-              </thead> */}
+              </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">{data.id}</th>
+                    <th scope="row">{index+1}</th>
                     <td>{data.name}</td>
                     <td>{data.email}</td>
                     <button type="submit" onClick={() => handleDelete(data.id)}>

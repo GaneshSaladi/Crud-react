@@ -4,8 +4,6 @@ import axios from "axios";
 // import {Link } from "react-router-dom";
 
 
-
-
 const Create = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
